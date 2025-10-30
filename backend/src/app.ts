@@ -1,9 +1,9 @@
 import express from "express";
-import cors from "express";
+import cors from "cors";
 import { randomInt, rgbToHsl } from "./utils";
 
 const app = express();
-app.use(cors)
+app.use(cors({ origin: "*" }));
 const port = Number(process.env.PORT) || 3000;
 
 app.get("/color", (req, res) => {

@@ -11,6 +11,7 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/node": "^24.9.2",
     "ts-node": "^10.9.2",
